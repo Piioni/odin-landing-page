@@ -13,8 +13,12 @@
 }
 
 body {
-    font-family: 'Brandon Grotesque', sans-serif;
+    font-family: 'Brandon Grotesque', monstserrat;
     text-align: center;
+    background-image: url('./images/hubblefield.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    height: 100vh;
 }
 
  img {
@@ -43,15 +47,14 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    height: 50px;
+    /* height: 50px; */
     align-items: center;
     color: white;
-    margin-bottom: 25px;
+    /* margin: 25px 0px ; */
 }
 
 .logo {
-    font-size: 24px;
-    color: #F9faf8;
+    width: 100px;
 }
 
 ul {
@@ -65,56 +68,51 @@ a{
 }
 
 .links{
-    font-size: 18px;
+    font-size: 26px;
     color: #e5e7eb;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 100px;
+    font-style: italic;
     /* margin-right: 26px; */
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 26px;
+    margin: 30px 0 34px;
 }
 
 .hero_left {
     display: flex;
     flex-direction: column;
-    width: 450px;
-}
-
-.button{
-    margin-top: 20px;
-    width: 170px;
-    height: 40px;
-    border-radius: 10px;
-    border: none ;
-    background-color: #3882f6;
+    width: 550px;
 }
 
 .text {
-    font-size: 18px;
+    font-size: 20px;
     color: #e5e7eb;
-    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
     text-align: start;
 }
 
 .heading {
     font-size: 48px;
     font-weight: 900;
-    color: #F9faf8;
-    margin-bottom: 6px;
+    color: #ff7d25;
     text-align: start;
 }
 
 .hero_right {
     align-self: center; 
+    width: 500px;
 }
 
 .image_logo {
-    width: 400px;
+    width: 480px;
 }
 
 
@@ -122,21 +120,34 @@ a{
 
 .section_2 {
     padding: 45px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición semitransparente */
+    z-index: 1;
 }
 
 .section_wrapper_2 {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    /* width: 1000px; */
     margin: auto;
-    gap: 20px;
-    
+    gap: 20px;   
 }
 
 .information {
-    font-size: 36px;
+    font-size: 39px;
     font-weight: 900;
-    color: #1F2937;
+    color: #ff7d25;
+    text-shadow: 2px 2px 4px rgba(15, 9, 2, 0.8);
+    z-index: 2
 }
 
 .cards {
@@ -157,20 +168,22 @@ a{
 
 .card_image {
     max-width: 100%;
-    height: auto;
+    height: 170px;
     border-radius: 15px;
     margin-bottom: 16px;
 
 }
 
 .card_text {
-    font-size: 18px;
+    color: #eee;
+    font-size: 22px;
     Overflow-wrap:break-word;
     word-break: break-word;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Seccion 3 */
@@ -189,27 +202,38 @@ a{
     align-items: center;
 }
 
+.quote_information {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ff7d25;
+    margin-bottom: 28px;
+
+}
+
 .quote {
     font-size: 26px;
     font-weight: lighter;
     color: #1F2937;
-    margin: 20px;
+    margin: 20px 20px 8px;
     text-align: left;
+    font-style: italic;
 }
 
 .author{
     width: 100%;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    margin: 16px;
+    margin: 8px 16px 20px;
     display: flex;
     justify-content: flex-end;
+    color: #6a4d75;
 }
 
 /* Seccion 4 */
 
 .section_4 {
     padding: 85px;
+    /* background-color:  #0b1e26; */
 }
 
 .section_wrapper_4 {
@@ -218,7 +242,7 @@ a{
     width: 1100px;
     margin: auto;
     padding: 46px;
-    background-color: #3882f6;
+    background-color: #0b1e26;
     border-radius: 28px;
     align-items: center;
 }
@@ -228,12 +252,13 @@ a{
     flex-direction: column;
     text-align: left;
     margin-left: 90px;
+    flex-basis: 500px;
 }
 
 .left_heading {
-    color: #F9faf8;
+    color: #ff7d25;
     margin-bottom: 16px;
-    font-size: 28px;
+    font-size: 34px;
 }
 
 .left_p {
@@ -246,9 +271,16 @@ a{
     height: 60px;
     border-radius: 10px;
     border: none ;
-    background-color: #F9faf8;
+    background-color: #6a4d75;
     align-self: center;
     margin-right: 50px;
+    color: #ff7d25;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
